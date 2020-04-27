@@ -67,6 +67,7 @@ public class Main {
         }
     }
 
+    //division by zero 
     private static int divideEAFP(int x, int y) {
         try{
             return x/y;
@@ -75,6 +76,7 @@ public class Main {
             return 0;
         }
     }
+    
     private  static int divideBYL(int x, int y){
         if(y!=0){
             return x/y;
