@@ -10,7 +10,7 @@ public class Main {
         System.out.println(divideEAFP(x, y));
 
        int z = getIntBYL();
-        System.out.println("z is " + z);
+       System.out.println("z is " + z);
 
 
        int a =  getIntEAFO();
@@ -18,6 +18,7 @@ public class Main {
     }
 
     //unhandled user input
+    //the program will crash if the user enters something else than a number
     public static int getInt(){
 
             Scanner scanner = new Scanner(System.in);
