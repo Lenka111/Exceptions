@@ -51,6 +51,8 @@ public class Main {
 
     }
 
+    //exception handling 
+    //the easiest and shortest way to catch errors
     private static int getIntEAFO(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number: ");
@@ -58,7 +60,7 @@ public class Main {
             return scanner.nextInt();
 
         }
-        // check if inpit is a number
+        // check if input is a number
         catch(InputMismatchException e){
             System.out.println(e.getMessage());
             return 0;
