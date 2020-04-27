@@ -27,6 +27,7 @@ public class Main {
 
     }
 
+    //one way to handle user's input
     public static int getIntBYL(){
         Scanner scanner = new Scanner(System.in);
         boolean isValid = true;
@@ -34,7 +35,8 @@ public class Main {
 
         String input = scanner.nextLine();
 
-        //check if input is valid
+        //check if input is digits
+     
         for(int i = 0; i < input.length(); i++){
             if(!Character.isDigit(input.charAt(i))) {
                 isValid = false;
@@ -42,6 +44,7 @@ public class Main {
             }
         }
         if(isValid){
+            //converts the string value to int
             return  Integer.parseInt(input);
         }
         return 0;
